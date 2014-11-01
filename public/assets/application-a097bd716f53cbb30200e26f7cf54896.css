@@ -1,0 +1,55 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+body {font-family:futura, helvetica, arial;font-size:19px;background-color:#232323}
+form {margin:0px;padding:0px}
+a {color:#ffffff}a:hover{text-decoration:none}
+
+h1 {margin-bottom:0px;padding-bottom:0px;padding-top:0px;margin-top:18px;font-size:60px;font-weight:normal;letter-spacing:-3px;margin-left:-6px}
+h1 a {color:#F2F179;text-decoration:none}
+h1 a:hover,.birdseed_note a:hover{color:#FFFFAA}
+h2 {margin-top:0px;padding-top:0px;font-size:20px;font-weight:normal;color:#F2F179;margin-bottom:20px;letter-spacing:-0.01em}
+h3 {color:#6178D8;font-weight:normal;margin-bottom:10px;font-size:22px;margin-top:22px}
+pre {margin-top: 1px;font-size: 12px}
+
+#main{width:1035px;margin-left:auto;margin-right:auto;text-align:center}
+#inner{position:relative;text-align:left;border:20px solid #e6e6e6;padding:10px;padding-right:15px;margin-left:auto;margin-right:auto;background-color:#5E5D5E;color:#ffffff}
+#form_wrapper {border-bottom:1px solid #5E5D5E;min-height:270px}
+
+
+#xpath{width:839px;margin-left: 20px}
+#submit {background-color: #ccc; font-size: 20px; text-decoration: none; cursor: pointer; border:none; padding: 7px 18px; height: 40px;}
+#form_wrapper input[type="text"]{font-size:16px}
+#form_wrapper input[type="text"],#form_wrapper textarea{background-color:#000000;color:#ffffff;padding:10px;border:1px solid #DDDDDD}
+.match{padding:2px;color:#0066B3;background-color:#BFE4FF}
+#test_and_result{margin-top:10px;margin-left:20px;margin-right:3px;text-align:left;position:relative}
+#test_string{float:left;padding-left:0px;width:408px;height:165px}
+input[type="text"]:focus,#test_string textarea:focus{background-color:#221e1e !important}
+#test_string textarea{width:100%;height:125px;margin-bottom:4px}
+#result{margin-left:450px;width:490px;margin-bottom:0px}
+.notice,.error{padding:20px;position:relative;font-size:16px;text-align:center;margin-bottom:26px}
+.notice{top:18px;border:10px solid #779A73;background-color:#CDF3C9;color:#283A26}
+.notice a{color:#283A26}
+.error{top:50px;background-color:#FDD2D2;border:10px solid #D37979;color:#4D3838}
+label,.result_label{letter-spacing:1px;font-size:16px}
+#xpath_label{padding-left:20px;line-height:24px}
+
+#xml{margin-top:1px}
+#notice{margin-top:-10px;background-color:#FFFFAA;border:4px solid #BEBF83;border-top:0px;font-size:13px;padding:5px;padding-top:7px;color:#1F1F13;width:920px;margin-left:auto;margin-right:auto}
+#notice a{color:#1F1F13}
+
+.xpathular { background-color: yellow; }
