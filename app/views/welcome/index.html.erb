@@ -12,25 +12,29 @@ $(document).ready(function() {
 });
 </script>
 
+
 <%= form_tag('/', id: 'test_form') do %>
 
   <label id="xpath_label" for="xpath">Your XPATH expression:</label><br />
-  <%= text_field_tag :xpath, params[:xpath] %><br />
+  <%= text_field_tag :xpath, params[:xpath] %> <%= submit_tag "Send", id: 'submit' %><br />
 
-          <div id="test_and_result" class="gainlayout">
-            <div id="test_string">
-              <div id="inner_test_string_wrapper">
-                <label for="xml">Your XML:</label>
-                  <%= text_area_tag :xml, params[:xml] %>
-              </div>
-            </div>
+  <div id="test_and_result">
 
-            <div id="result">
-              <span class="result_label">Match result:</span>
-              <pre><code class="xml"><%=raw highlight_xml @processed_xml, @collection %></code>
-            </div>
-          </div>
+    <div id="test_string">
+      <div id="inner_test_string_wrapper">
+        <label for="xml">Your XML:</label>
+          <%= text_area_tag :xml, params[:xml] %>
+      </div>
+    </div> <!-- #test_string -->
 
-  <p><%= submit_tag %></p>
+    <div id="result">
+      <span class="result_label">Match result:</span>
+
+      <% if @processed_xml %>
+        <pre><code class="xml"><%=raw highlight_xml @processed_xml, @collection %></code></pre>
+      <% end %>
+    </div> <!-- #result -->
+
+  </div> <!-- test_string -->
+
 <% end %>
-
